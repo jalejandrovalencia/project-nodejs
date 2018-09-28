@@ -1,6 +1,564 @@
+@import url("http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css");
+@import url("http://fonts.googleapis.com/css?family=Roboto:400,300,700italic,700,500&subset=latin,latin-ext");
+
 body {
-	background: #DADAE1;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    	
+      }
+/* nav y/o la barra de navegacion*/
+
+ a.navbar-brand {
+            float: left;
+            height: 50px;
+            padding: 15px 15px;
+            font-size: 18px;
+            line-height: 20px;
+            text-decoration: none;
+            color: orangered;
+            font-family: cursive;
+            font-weight: 700;
+
+        }
+ .navbar-brand>img{
+ 	margin-top: -15px;
+ 	width: 100%;
+ 	height: 80px;
+ }
+
+        nav.main-navigation {
+            position: relative;
+        }
+
+        nav.main-navigation ul.nav-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            position: relative;
+            text-align: right;
+        }
+
+        .nav-list li.nav-list-item {
+            display: inline-block;
+            line-height: 40px;
+            margin-left: 30px;
+            margin-top: 15px;
+        }
+
+        a.nav-link {
+            text-decoration: none;
+            font-size: 18px;
+            font-family: sans-serif;
+            font-weight: 500;
+            cursor: pointer;
+            position: relative;
+            color: #404040;
+        }
+
+        @keyframes FadeIn {
+            0% {
+                opacity: 0;
+                -webkit-transition-duration: 0.8s;
+                transition-duration: 0.8s;
+                -webkit-transform: translateY(-10px);
+                -ms-transform: translateY(-10px);
+                transform: translateY(-10px);
+            }
+
+
+            100% {
+                opacity: 1;
+                -webkit-transform: translateY(0);
+                -ms-transform: translateY(0);
+                transform: translateY(0);
+                pointer-events: auto;
+                transition: cubic-bezier(0.4, 0, 0.2, 1);
+            }
+        }
+
+        .nav-list li {
+            animation: FadeIn 1s cubic-bezier(0.65, 0.05, 0.36, 1);
+            animation-fill-mode: both;
+        }
+
+        .nav-list li:nth-child(1) {
+            animation-delay: .3s;
+        }
+
+        .nav-list li:nth-child(2) {
+            animation-delay: .6s;
+        }
+
+        .nav-list li:nth-child(3) {
+            animation-delay: .9s;
+        }
+
+        .nav-list li:nth-child(4) {
+            animation-delay: 1.2s;
+        }
+
+        .nav-list li:nth-child(5) {
+            animation-delay: 1.5s;
+        }
+
+        /* Animation */
+
+        @keyframes fadeInUp {
+            from {
+                transform: translate3d(0, 40px, 0)
+            }
+
+            to {
+                transform: translate3d(0, 0, 0);
+                opacity: 1
+            }
+        }
+
+        @-webkit-keyframes fadeInUp {
+            from {
+                transform: translate3d(0, 40px, 0)
+            }
+
+            to {
+                transform: translate3d(0, 0, 0);
+                opacity: 1
+            }
+        }
+
+        .animated {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            -webkit-animation-duration: 1s;
+            -webkit-animation-fill-mode: both
+        }
+
+        .animatedFadeInUp {
+            opacity: 0
+        }
+
+        .fadeInUp {
+            opacity: 0;
+            animation-name: fadeInUp;
+            -webkit-animation-name: fadeInUp;
+        }
+	/*targetas de presentacion */
+	/* COMMON PRICING STYLES */
+		.panel.price,
+		.panel.price>.panel-heading{
+			border-radius:0px;
+			 -moz-transition: all .3s ease;
+			-o-transition:  all .3s ease;
+			-webkit-transition:  all .3s ease;
+		}
+		.panel.price:hover{
+			box-shadow: 0px 0px 30px rgba(0,0,0, .2);
+		}
+		.panel.price:hover>.panel-heading{
+			box-shadow: 0px 0px 30px rgba(0,0,0, .2) inset;
+		}
+		
+				
+		.panel.price>.panel-heading{
+			box-shadow: 0px 5px 0px rgba(50,50,50, .2) inset;
+			text-shadow:0px 3px 0px rgba(50,50,50, .6);
+		}
+			
+		.price .list-group-item{
+			border-bottom-:1px solid rgba(250,250,250, .5);
+		}
+		
+		.panel.price .list-group-item:last-child {
+			border-bottom-right-radius: 0px;
+			border-bottom-left-radius: 0px;
+		}
+		.panel.price .list-group-item:first-child {
+			border-top-right-radius: 0px;
+			border-top-left-radius: 0px;
+		}
+		
+		.price .panel-footer {
+			color: #fff;
+			border-bottom:0px;
+			background-color:  rgba(0,0,0, .1);
+			box-shadow: 0px 3px 0px rgba(0,0,0, .3);
+		}
+		
+		
+		.panel.price .btn{
+			box-shadow: 0 -1px 0px rgba(50,50,50, .2) inset;
+			border:0px;
+		}
+		
+	/* green panel */
+	
+		
+		.price.panel-green>.panel-heading {
+			color: #fff;
+			background-color: #57AC57;
+			border-color: #71DF71;
+			border-bottom: 1px solid #71DF71;
+		}
+		
+			
+		.price.panel-green>.panel-body {
+			color: #fff;
+			background-color: #65C965;
+		}
+				
+		
+		.price.panel-green>.panel-body .lead{
+				text-shadow: 0px 3px 0px rgba(50,50,50, .3);
+		}
+		
+		.price.panel-green .list-group-item {
+			color: #333;
+			background-color: rgba(50,50,50, .01);
+			font-weight:600;
+			text-shadow: 0px 1px 0px rgba(250,250,250, .75);
+		}
+		
+		/* blue panel */
+	
+		
+		.price.panel-blue>.panel-heading {
+			color: #fff;
+			background-color: #608BB4;
+			border-color: #78AEE1;
+			border-bottom: 1px solid #78AEE1;
+		}
+		
+			
+		.price.panel-blue>.panel-body {
+			color: #fff;
+			background-color: #73A3D4;
+		}
+				
+		
+		.price.panel-blue>.panel-body .lead{
+				text-shadow: 0px 3px 0px rgba(50,50,50, .3);
+		}
+		
+		.price.panel-blue .list-group-item {
+			color: #333;
+			background-color: rgba(50,50,50, .01);
+			font-weight:600;
+			text-shadow: 0px 1px 0px rgba(250,250,250, .75);
+		}
+		
+		/* red price */
+		
+	
+		.price.panel-red>.panel-heading {
+			color: #fff;
+			background-color: #D04E50;
+			border-color: #FF6062;
+			border-bottom: 1px solid #FF6062;
+		}
+		
+			
+		.price.panel-red>.panel-body {
+			color: #fff;
+			background-color: #EF5A5C;
+		}
+		
+		
+		
+		
+		.price.panel-red>.panel-body .lead{
+				text-shadow: 0px 3px 0px rgba(50,50,50, .3);
+		}
+		
+		.price.panel-red .list-group-item {
+			color: #333;
+			background-color: rgba(50,50,50, .01);
+			font-weight:600;
+			text-shadow: 0px 1px 0px rgba(250,250,250, .75);
+		}
+		
+		/* grey price */
+		
+	
+		.price.panel-grey>.panel-heading {
+			color: #fff;
+			background-color: #6D6D6D;
+			border-color: #B7B7B7;
+			border-bottom: 1px solid #B7B7B7;
+		}
+		
+			
+		.price.panel-grey>.panel-body {
+			color: #fff;
+			background-color: #808080;
+		}
+		
+
+		
+		.price.panel-grey>.panel-body .lead{
+				text-shadow: 0px 3px 0px rgba(50,50,50, .3);
+		}
+		
+		.price.panel-grey .list-group-item {
+			color: #333;
+			background-color: rgba(50,50,50, .01);
+			font-weight:600;
+			text-shadow: 0px 1px 0px rgba(250,250,250, .75);
+		}
+		
+		/* white price */
+		
+	
+		.price.panel-white>.panel-heading {
+			color: #333;
+			background-color: #f9f9f9;
+			border-color: #ccc;
+			border-bottom: 1px solid #ccc;
+			text-shadow: 0px 2px 0px rgba(250,250,250, .7);
+		}
+		
+		.panel.panel-white.price:hover>.panel-heading{
+			box-shadow: 0px 0px 30px rgba(0,0,0, .05) inset;
+		}
+			
+		.price.panel-white>.panel-body {
+			color: #fff;
+			background-color: #dfdfdf;
+		}
+				
+		.price.panel-white>.panel-body .lead{
+				text-shadow: 0px 2px 0px rgba(250,250,250, .8);
+				color:#666;
+		}
+		
+		.price:hover.panel-white>.panel-body .lead{
+				text-shadow: 0px 2px 0px rgba(250,250,250, .9);
+				color:#333;
+		}
+		
+		.price.panel-white .list-group-item {
+			color: #333;
+			background-color: rgba(50,50,50, .01);
+			font-weight:600;
+			text-shadow: 0px 1px 0px rgba(250,250,250, .75);
+		}
+
+/* slider  */
+
+.flexslider {
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+		box-shadow: none;
 }
+
+.flexslider li {
+		position: relative;
+}
+
+.flexslider li .meta {
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+		color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		font-family: 'Roboto', sans-serif;
+}
+
+.flexslider li h1 {
+		background: rgba(51, 51, 51, 0.5);
+		padding: 12px 18px 12px;
+		margin-bottom: 0;
+		font-size: 1.8em;
+		font-weight: 300;
+}
+
+.flexslider li h2 {
+		background: rgba(51, 51, 51, 0.5);
+		padding: 13px 18px 11px;
+		font-size: 1.1em;
+		margin-bottom: 0;
+		font-weight: 300;
+}
+
+.flexslider li .category {
+		display: flex;
+		flex-direction: row;
+}
+
+.flexslider li .category p {
+		background: #e43837;
+		margin-right: 7px;
+		font-size: 1.1em;
+		padding: 12px 18px 10px;
+		font-weight: 300;
+}
+
+.flexslider li .category span {
+		background: #e43837;
+		margin-top: 17px;
+		padding: 8px 12px 0;
+		font-size: 0.9em;
+		font-weight: 300;
+		height: 26px;
+}
+
+.flexslider li h1,
+.flexslider li h2,
+.flexslider li .category p,
+.flexslider li .category span {
+		-webkit-animation-duration: .6s;
+		animation-duration: .6s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+		-webkit-animation-name: fadeOutLeft;
+		animation-name: fadeOutLeft;
+}
+
+.flexslider li.flex-active-slide .meta h1,
+.flexslider li.flex-active-slide .meta h2,
+.flexslider li.flex-active-slide .meta .category p,
+.flexslider li.flex-active-slide .meta .category span {
+		-webkit-animation-delay: .4s;
+		animation-delay: .4s;
+		-webkit-animation-duration: .6s;
+		animation-duration: .6s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+		-webkit-animation-name: fadeInLeft;
+		animation-name: fadeInLeft;
+}
+
+.flexslider li.flex-active-slide .meta h2 {
+		-webkit-animation-delay: .5s;
+		animation-delay: .5s;
+}
+
+.flexslider li.flex-active-slide .meta .category p {
+		-webkit-animation-delay: .6s;
+		animation-delay: .6s;
+}
+
+.flexslider li.flex-active-slide .meta .category span {
+		-webkit-animation-delay: .8s;
+		animation-delay: .8s;
+}
+
+.flex-direction-nav {
+		position: absolute;
+		top: 0;
+		left: 30px;
+}
+
+.flex-direction-nav a {
+		text-decoration: none;
+		display: block;
+		width: 30px;
+		height: 30px;
+		background-color: #333;
+		margin: -20px 0 0;
+		position: absolute;
+		top: 50px;
+		z-index: 10;
+		overflow: hidden;
+		opacity: .5;
+		cursor: pointer;
+		color: #fff;
+		-webkit-transition: all .3s ease;
+		-moz-transition: all .3s ease;
+		transition: all .3s ease;
+}
+
+.flex-direction-nav .flex-prev {
+		text-align: left;
+		left: -10px;
+}
+
+.flex-direction-nav .flex-next {
+		text-align: right;
+		left: 30px;
+}
+
+.flexslider:hover .flex-prev {
+		left: -10px;
+}
+
+.flexslider:hover .flex-next {
+		left: 30px;
+}
+
+.flexslider:hover .flex-next:hover,
+.flexslider:hover .flex-prev:hover {
+		opacity: 1;
+}
+
+.flex-direction-nav a:before {
+		font-family: FontAwesome;
+		content: '\f104';
+		font-size: 25px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		top: 0;
+		padding: 2px;
+		font-size: 19px;
+    line-height: 27px;
+}
+
+.flex-direction-nav a.flex-next:before {
+		content: '\f105';
+}
+
+@-webkit-keyframes fadeInLeft {
+		0% {
+				opacity: 0;
+				-webkit-transform: translate3d(-100%, 0, 0);
+				transform: translate3d(-100%, 0, 0);
+		}
+		100% {
+				opacity: 1;
+				-webkit-transform: none;
+				transform: none;
+		}
+}
+
+@keyframes fadeInLeft {
+		0% {
+				opacity: 0;
+				-webkit-transform: translate3d(-100%, 0, 0);
+				transform: translate3d(-100%, 0, 0);
+		}
+		100% {
+				opacity: 1;
+				-webkit-transform: none;
+				transform: none;
+		}
+}
+
+@-webkit-keyframes fadeOutLeft {
+		0% {
+				opacity: 1;
+		}
+		100% {
+				opacity: 0;
+				-webkit-transform: translate3d(-100%, 0, 0);
+				transform: translate3d(-100%, 0, 0);
+		}
+}
+
+@keyframes fadeOutLeft {
+		0% {
+				opacity: 1;
+		}
+		100% {
+				opacity: 0;
+				-webkit-transform: translate3d(-100%, 0, 0);
+				transform: translate3d(-100%, 0, 0);
+		}
+}
+
 
 /* Footer */
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');

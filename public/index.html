@@ -5,123 +5,315 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Aprendiendo nodejs y javaScritp</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.0/flexslider-min.css">
 	<link rel="stylesheet" href="main.css">
-	
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
 	<!------ Include the above in your HEAD tag ---------->
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+  <div class="container-fluid">	
+  	<!-- barra de navegacion con bootstrap -->
+	<nav class="main-navigation">
+        <div class="navbar-header animated fadeInUp">
+            <a class="navbar-brand" href="#"><img src="../img/logomio.png" alt="logo"></a>
         </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
+        <ul class="nav-list">
+            <li class="nav-list-item">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-list-item">
+                <a href="#" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-list-item">
+                <a href="#" class="nav-link">Blog</a>
+            </li>
+            <li class="nav-list-item">
+                <a href="#" class="nav-link">Works</a>
+            </li>
+            <li class="nav-list-item">
+                <a href="#" class="nav-link">Contact</a>
+            </li>
+        </ul>
 
-	
-	<div class="container">
-		<div class="row">
-				<h1 class="text-center">Hola mundo hermoso</h1>	
-				<img src="img/angel.jpg">
-		</div>
-		
-	</div>
-
-
-
-	<!-- Footer -->
-	<section id="footer">
-		<div class="container">
-			<div class="row text-center text-xs-center text-sm-left text-md-left">
-				<div class="col-xs-12 col-sm-4 col-md-4">
-					<h5>Quick links</h5>
-					<ul class="list-unstyled quick-links">
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
-					</ul>
+    </nav>
+	<!-- slider con bootstrap 4-->
+  <div class="flexslider left">
+	<ul class="slides">
+	  <li>
+		<img src="https://source.unsplash.com/BaCmEa2hy8g/1600x900">
+	      <div class="meta">
+			<h1>Lorem ipsum dolor sit amet, consectetur.</h1>
+		 	  <h2>Lorem ipsum dolor sit.</h2>
+			    <div class="category">
+				  <p>$286600</p>
+				   <span>Category</span>
 				</div>
-				<div class="col-xs-12 col-sm-4 col-md-4">
-					<h5>Quick links</h5>
-					<ul class="list-unstyled quick-links">
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
-					</ul>
-				</div>
-				<div class="col-xs-12 col-sm-4 col-md-4">
-					<h5>Quick links</h5>
-					<ul class="list-unstyled quick-links">
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
-						<li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Imprint</a></li>
-					</ul>
+		  </div>
+	  </li>
+		<li>
+		  <img src="https://source.unsplash.com/RmZIUIF2S2Q/1600x900">
+			<div class="meta">
+			  <h1>Lorem ipsum dolor sit amet, consectetur.</h1>
+			    <h2>Lorem ipsum dolor sit.</h2>
+				  <div class="category">
+					<p>$415000</p>
+					  <span>Category</span>
+				  </div>
+			</div>
+		</li>
+		<li>
+		  <img src="https://source.unsplash.com/cFplR9ZGnAk/1600x900">
+			<div class="meta">
+			  <h1>Lorem ipsum dolor sit amet, consectetur.</h1>
+			   <h2>Lorem ipsum dolor sit.</h2>
+				<div class="category">
+				  <p>$415000</p>
+					<span>Category</span>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
-					<ul class="list-unstyled list-inline social text-center">
-						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
-						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
-						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
-						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
-						<li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
-					</ul>
+		</li>
+		<li>
+		  <img src="https://source.unsplash.com/Ui8KQ0ahXBM/1600x900">
+			<div class="meta">
+			  <h1>Lorem ipsum dolor sit amet, consectetur.</h1>
+				<h2>Lorem ipsum dolor sit.</h2>
+				  <div class="category">
+					<p>$415000</p>
+					  <span>Category</span>
+				  </div>
+			</div>
+		</li>
+	</ul>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.0/jquery.flexslider-min.js"></script>
+<script>
+     $('.flexslider').flexslider({
+	animation: "slide",
+	controlNav: false
+});
+</script>
+		<!-- tatgetas de presentacion  -->
+	<div class="container">
+	    <div class="row">
+    		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">	
+				<!-- PRICE ITEM -->
+				<div class="panel price panel-red">
+					<div class="panel-heading  text-center"><h3>PRO PLAN</h3></div>
+						<div class="panel-body text-center">
+						 <p class="lead" style="font-size:40px"><strong>$10 / month</strong></p>
+						</div>
+						   <ul class="list-group list-group-flush text-center">
+							<li class="list-group-item"><i class="icon-ok text-danger"></i> Personal use</li>
+							<li class="list-group-item"><i class="icon-ok text-danger"></i> Unlimited projects</li>
+							<li class="list-group-item"><i class="icon-ok text-danger"></i> 27/7 support</li>
+						   </ul>
+						  <div class="panel-footer">
+							<a class="btn btn-lg btn-block btn-danger" href="#">BUY NOW!</a>
+						  </div>
 				</div>
-				</hr>
-			</div>	
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-					<p><u><a href="https://www.nationaltransaction.com/">National Transaction Corporation</a></u> is a Registered MSP/ISO of Elavon, Inc. Georgia [a wholly owned subsidiary of U.S. Bancorp, Minneapolis, MN]</p>
-					<p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">Sunlimetech</a></p>
+				<!-- /PRICE ITEM -->	
+			</div>
+				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+					<!-- PRICE ITEM -->
+					<div class="panel price panel-blue">
+					  <div class="panel-heading arrow_box text-center"><h3>DEV PLAN</h3></div>
+						<div class="panel-body text-center">
+						 <p class="lead" style="font-size:40px"><strong>$20 / month</strong></p>
+						  </div>
+						   <ul class="list-group list-group-flush text-center">
+							 <li class="list-group-item"><i class="icon-ok text-info"></i> Personal use</li>
+							 <li class="list-group-item"><i class="icon-ok text-info"></i> Unlimited projects</li>
+							 <li class="list-group-item"><i class="icon-ok text-info"></i> 27/7 support</li>
+						    </ul>
+						     <div class="panel-footer">
+							  <a class="btn btn-lg btn-block btn-info" href="#">BUY NOW!</a>
+						    </div>
+					</div>
+					<!-- /PRICE ITEM -->		
 				</div>
-				</hr>
-			</div>	
+		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+		 <!-- PRICE ITEM -->
+		 <div class="panel price panel-green">
+		   <div class="panel-heading arrow_box text-center"><h3>FREE PLAN</h3></div>
+			 <div class="panel-body text-center">
+			   <p class="lead" style="font-size:40px"><strong>$0 / month</strong></p>
+			   </div>
+				 <ul class="list-group list-group-flush text-center">
+					<li class="list-group-item"><i class="icon-ok text-success"></i> Personal use</li>
+					<li class="list-group-item"><i class="icon-ok text-success"></i> Unlimited projects</li>
+					<li class="list-group-item"><i class="icon-ok text-success"></i> 27/7 support</li>
+				 </ul>
+				   <div class="panel-footer">
+					<a class="btn btn-lg btn-block btn-success" href="#">BUY NOW!</a>
+				   </div>
+		 </div>
+		 <!-- /PRICE ITEM -->			
 		</div>
-	</section>
-	<!-- ./Footer -->
-
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	<script src="js/main.js"></script>
+		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+	     <!-- PRICE ITEM -->
+		  <div class="panel price panel-grey">
+			<div class="panel-heading arrow_box text-center"><h3>FREE PLAN</h3></div>
+			  <div class="panel-body text-center">
+				<p class="lead" style="font-size:40px"><strong>$0 / month</strong></p>
+			     </div>
+				   <ul class="list-group list-group-flush text-center">
+					 <li class="list-group-item"><i class="icon-ok text-success"></i> Personal use</li>
+					 <li class="list-group-item"><i class="icon-ok text-success"></i> Unlimited projects</li>
+					 <li class="list-group-item"><i class="icon-ok text-success"></i> 27/7 support</li>
+					  </ul>
+					    <div class="panel-footer">
+					     <a class="btn btn-lg btn-block btn-primary" href="#">BUY NOW!</a>
+					   </div>
+		   </div>
+		    <!-- /PRICE ITEM -->		
+		</div>		
+    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">			
+      <!-- PRICE ITEM -->
+	  <div class="panel price panel-white">
+		<div class="panel-heading arrow_box text-center"><h3>FREE PLAN</h3></div>
+		 <div class="panel-body text-center">
+		  <p class="lead" style="font-size:40px"><strong>$0 / month</strong></p>
+		   </div>
+			 <ul class="list-group list-group-flush text-center">
+				<li class="list-group-item"><i class="icon-ok text-success"></i> Personal use</li>
+				<li class="list-group-item"><i class="icon-ok text-success"></i> Unlimited projects</li>
+				<li class="list-group-item"><i class="icon-ok text-success"></i> 27/7 support</li>
+			     </ul>
+				   <div class="panel-footer">
+					 <a class="btn btn-lg btn-block btn-default" href="#">BUY NOW!</a>
+					  </div>
+	   </div>
+	   <!-- /PRICE ITEM -->			
+	</div>
+	<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">	
+	 <!-- PRICE ITEM -->
+	  <div class="panel price panel-white">
+		<div class="panel-heading arrow_box text-center"><h3>FREE PLAN</h3></div>
+		  <div class="panel-body text-center">
+		   <p class="lead" style="font-size:40px"><strong>$0 / month</strong></p>
+			</div>
+			  <ul class="list-group list-group-flush text-center">
+				<li class="list-group-item"><i class="icon-ok text-success"></i> Personal use</li>
+				<li class="list-group-item"><i class="icon-ok text-success"></i> Unlimited projects</li>
+				<li class="list-group-item"><i class="icon-ok text-success"></i> 27/7 support</li>
+			     </ul>
+				  <div class="panel-footer">
+				 	<a class="btn btn-lg btn-block btn-default" href="#">BUY NOW!</a>
+				  </div>
+	   </div>
+	 <!-- /PRICE ITEM -->				
+	</div>			
+	<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">	
+	  <!-- PRICE ITEM -->
+		<div class="panel price panel-white">
+	      <div class="panel-heading arrow_box text-center"><h3>FREE PLAN</h3></div>
+			<div class="panel-body text-center">
+			 <p class="lead" style="font-size:40px"><strong>$0 / month</strong></p>
+			  </div>
+				<ul class="list-group list-group-flush text-center">
+			 	 <li class="list-group-item"><i class="icon-ok text-success"></i> Personal use</li>
+				 <li class="list-group-item"><i class="icon-ok text-success"></i> Unlimited projects</li>
+				 <li class="list-group-item"><i class="icon-ok text-success"></i> 27/7 support</li>
+				  </ul>
+					<div class="panel-footer">
+					 <a class="btn btn-lg btn-block btn-default" href="#">BUY NOW!</a>
+					</div>
+		</div>
+		<!-- /PRICE ITEM -->			
+	</div>			
+	  <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">		
+	   <!-- PRICE ITEM -->
+		 <div class="panel price panel-white">
+		   <div class="panel-heading arrow_box text-center"><h3>FREE PLAN</h3></div>
+			 <div class="panel-body text-center">
+			   <p class="lead" style="font-size:40px"><strong>$0 / month</strong></p>
+				</div>
+				  <ul class="list-group list-group-flush text-center">
+				 	<li class="list-group-item"><i class="icon-ok text-success"></i> Personal use</li>
+					<li class="list-group-item"><i class="icon-ok text-success"></i> Unlimited projects</li>
+					<li class="list-group-item"><i class="icon-ok text-success"></i> 27/7 support</li>
+					 </ul>
+					   <div class="panel-footer">
+						 <a class="btn btn-lg btn-block btn-default" href="#">BUY NOW!</a>
+					   </div>
+		 </div>
+	    <!-- /PRICE ITEM -->		
+	  </div>		
+	</div>         
+</div>
+		<!-- Footer y/o pied de pagina-->
+		<section id="footer">
+			<div class="container">
+				<div class="row text-center text-xs-center text-sm-left text-md-left">
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<h5>Quick links</h5>
+						<ul class="list-unstyled quick-links">
+							<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+							<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+							<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+							<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+							<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<h5>Quick links</h5>
+						<ul class="list-unstyled quick-links">
+							<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+							<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+							<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+							<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+							<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<h5>Quick links</h5>
+						<ul class="list-unstyled quick-links">
+							<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+							<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+							<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+							<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+							<li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Imprint</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+						<ul class="list-unstyled list-inline social text-center">
+							<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+							<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+							<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+							<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+							<li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+						</ul>
+					</div>
+					</hr>
+				</div>	
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+						<p><u><a href="https://www.nationaltransaction.com/">National Transaction Corporation</a></u> is a Registered MSP/ISO of Elavon, Inc. Georgia [a wholly owned subsidiary of U.S. Bancorp, Minneapolis, MN]</p>
+						<p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">Sunlimetech</a></p>
+					</div>
+					</hr>
+				</div>	
+			</div>
+		</section>
+		<!-- ./Footer -->
+ </div>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="js/main.js"></script>
 </body>
 
 </html>
